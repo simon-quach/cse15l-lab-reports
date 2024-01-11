@@ -12,7 +12,7 @@ Output:
 [user@sahara ~]$  
 ```
 
-It changes to the root directory. **Not an error.**
+The directory is changed to the home directory when no argument is given. **Not an error.**
 
 ### With Directory
 Command:
@@ -25,7 +25,7 @@ Output:
 [user@sahara ~/lecture1]$  
 ```
 
-It changes the directory to /lecture1. **Not an error.**
+Since a directory "lecture1" was given as an argument, the command changes the working directory to the inputted argument. **Not an error.**
 
 ### With File
 Command:
@@ -38,7 +38,7 @@ Output:
 bash: cd: Hello.java: Not a directory
 ```
 
-It doesn't change directories because the argument given is a file. **Error.**
+It doesn't change directories because the argument given is a file. The argument only accepts directories. **Error.**
 
 ## ls
 ### No Arguments
@@ -52,7 +52,7 @@ Output:
 lecture1
 ```
 
-It shows the files and directories in the "/" directory. **Not an error.**
+Since no argument is given, it automatically shows the files and directories in the "./" directory, or the working directory. **Not an error.**
 
 ### With Directory
 Command:
@@ -78,7 +78,7 @@ Output:
 Hello.java
 ```
 
-It shows the file given, which is "Hello.java". **Not an error.**
+It shows the file given, which is "Hello.java". Instead of showing multiple files and directories, it only displays one file, because the argument given was a single file. **Not an error.**
 
 ## cat
 ### No Arguments
@@ -92,7 +92,7 @@ Output:
 
 ```
 
-It doesn't print anything because no argument was given. **Not an error.**
+Since no argument was given, the command prints nothing as a result. **Not an error.**
 
 ### With Directory
 Command:
@@ -105,7 +105,7 @@ Output:
 cat: lecture1/: Is a directory
 ```
 
-It doesn't show the file contents because the argument given was a directory. **Error.**
+It doesn't show the file contents because the argument given was a directory, rather than a file. **Error.**
 
 ### With File
 Command:
