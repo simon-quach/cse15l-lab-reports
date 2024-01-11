@@ -12,6 +12,7 @@ Output:
 [user@sahara ~]$  
 ```
 
+Working Directory: /
 The directory is changed to the home directory when no argument is given. **Not an error.**
 
 ### With Directory
@@ -25,6 +26,7 @@ Output:
 [user@sahara ~/lecture1]$  
 ```
 
+Working Directory: /
 Since a directory "lecture1" was given as an argument, the command changes the working directory to the inputted argument. **Not an error.**
 
 ### With File
@@ -38,6 +40,7 @@ Output:
 bash: cd: Hello.java: Not a directory
 ```
 
+Working Directory: /lecture1
 It doesn't change directories because the argument given is a file. The argument only accepts directories. **Error.**
 
 ## ls
@@ -52,6 +55,7 @@ Output:
 lecture1
 ```
 
+Working Directory: /
 Since no argument is given, it automatically shows the files and directories in the "./" directory, or the working directory. **Not an error.**
 
 ### With Directory
@@ -65,6 +69,7 @@ Output:
 Hello.class  Hello.java  messages  README
 ```
 
+Working Directory: /
 It shows the files and directories in the "/lecture1" directory. **Not an error.**
 
 ### With File
@@ -78,6 +83,7 @@ Output:
 Hello.java
 ```
 
+Working Directory: /lecture1
 It shows the file given, which is "Hello.java". Instead of showing multiple files and directories, it only displays one file, because the argument given was a single file. **Not an error.**
 
 ## cat
@@ -92,6 +98,7 @@ Output:
 
 ```
 
+Working Directory: /
 Since no argument was given, the command prints nothing as a result. **Not an error.**
 
 ### With Directory
@@ -105,6 +112,7 @@ Output:
 cat: lecture1/: Is a directory
 ```
 
+Working Directory: /
 It doesn't show the file contents because the argument given was a directory, rather than a file. **Error.**
 
 ### With File
@@ -129,4 +137,5 @@ StandardCharsets.UTF_8);
   }
 ```
 
+Working Directory: /lecture1
 It prints the file contents because a file was given for the argument. **Not an error.**
