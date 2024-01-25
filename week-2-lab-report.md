@@ -26,7 +26,15 @@ class Handler implements URLHandler {
         String text = parameters[0].split("=")[1];
         String[] message = { user, text };
         mapping.add(message);
-        return "Message added!";
+
+        String res = "";
+        for (String[] m : mapping) {
+          res += m[0] + ": " + m[1] + "\n";
+        }
+        if (res.equals("")) {
+          return "No new messages";
+        }
+        return res;
       }
       return "404 Not Found!";
     }
