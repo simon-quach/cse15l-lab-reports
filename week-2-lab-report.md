@@ -1,3 +1,9 @@
+# Lab Report 2 - Servers and SSH Keys (Week 3)
+
+## Part 1
+In this section, I created a webserver called ChatServer that supports the path `/add-message`, which adds messages to the chat log. It should keep track of a single string that gets added to by incoming requests.
+
+Here is the code that I wrote for the implementation:
 ```
 import java.io.IOException;
 import java.net.URI;
@@ -54,6 +60,8 @@ class ChatServer {
   }
 }
 ```
+
+To start, I used the path `/add-message?s=<string>&user=<string>`
 
 <img width="544" alt="image" src="https://github.com/simon-quach/cse15l-lab-reports/assets/43255108/eca55923-b080-48f8-8677-c0767f7f1e64">
 <img width="580" alt="image" src="https://github.com/simon-quach/cse15l-lab-reports/assets/43255108/61479e7e-0615-4ff4-8dc7-3f590c92c031">
