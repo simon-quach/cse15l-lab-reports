@@ -77,7 +77,20 @@ After I used `/add-message?s=Hey%20there!&user=Simon2` and the page shows this:
 
 This also calls the handleRequest method in my code. Since the path is /add-message, the code looks at the logic under there if statement `if (url.getPath().contains("/add-message"))`. It stores the two parameters in `String[] parameters` like this:
 ```
+
+
 { "s=Hey there!", "user=Simon2" }
 ```
 <br />
 The "s=" and "user=" are then removed and the two strings are concatenated to the results string that is later returned. Once the res string returns, it should have added an additional message.
+
+## Part 2
+### This is where my private SSH key is located.
+<img width="334" alt="image" src="https://github.com/simon-quach/cse15l-lab-reports/assets/43255108/607074a2-1aad-488c-aea6-10896c34e921">
+Path: //Users/simonquach/.ssh/id_rsa.pub
+### This is where my public SSH key is located on ieng6's file system.
+<img width="579" alt="image" src="https://github.com/simon-quach/cse15l-lab-reports/assets/43255108/98d1c50f-4a51-4c17-a25d-afe662ab39b5">
+Path: /home/linux/ieng6/oce/59/siquach/.ssh/authorized_keys
+### Here I logged into my ieng6 account without being asked for a password.
+<img width="588" alt="image" src="https://github.com/simon-quach/cse15l-lab-reports/assets/43255108/9c38e04a-3437-4128-b631-d2b9e885ed26">
+
