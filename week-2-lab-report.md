@@ -62,6 +62,7 @@ class ChatServer {
 ```
 
 To start, I used the path `/add-message?s=Hello!&user=Simon` to mimick a message "Hello!" sent by user named "Simon". The page shows this:
+
 <img width="544" alt="image" src="https://github.com/simon-quach/cse15l-lab-reports/assets/43255108/eca55923-b080-48f8-8677-c0767f7f1e64">
 <br />
 
@@ -74,6 +75,7 @@ This calls the handleRequest method in my code. Since the path is /add-message, 
 The "s=" and "user=" are then removed and the two strings are concatenated to the results string that is later returned. Once the res string returns, it should have added an additional message.
 
 After I used `/add-message?s=Hey%20there!&user=Simon2` and the page shows this:
+
 <img width="580" alt="image" src="https://github.com/simon-quach/cse15l-lab-reports/assets/43255108/61479e7e-0615-4ff4-8dc7-3f590c92c031">
 <br />
 
