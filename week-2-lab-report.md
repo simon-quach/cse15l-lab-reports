@@ -64,11 +64,13 @@ class ChatServer {
 To start, I used the path `/add-message?s=Hello!&user=Simon` to mimick a message "Hello!" sent by user named "Simon". The page shows this:
 <img width="544" alt="image" src="https://github.com/simon-quach/cse15l-lab-reports/assets/43255108/eca55923-b080-48f8-8677-c0767f7f1e64">
 <br />
+
 This calls the handleRequest method in my code. Since the path is /add-message, the code looks at the logic under there if statement `if (url.getPath().contains("/add-message"))`. It stores the two parameters in `String[] parameters` like this:
 ```
 { "s=Hello!", "user=Simon" }
 ```
 <br />
+
 The "s=" and "user=" are then removed and the two strings are concatenated to the results string that is later returned. Once the res string returns, it should have added an additional message.
 
 After I used `/add-message?s=Hey%20there!&user=Simon2` and the page shows this:
@@ -81,7 +83,7 @@ This also calls the handleRequest method in my code. Since the path is /add-mess
 
 { "s=Hey there!", "user=Simon2" }
 ```
-<br />
+
 The "s=" and "user=" are then removed and the two strings are concatenated to the results string that is later returned. Once the res string returns, it should have added an additional message.
 
 ## Part 2
@@ -98,3 +100,5 @@ Path: /home/linux/ieng6/oce/59/siquach/.ssh/authorized_keys
 ### Here I logged into my ieng6 account without being asked for a password.
 <img width="588" alt="image" src="https://github.com/simon-quach/cse15l-lab-reports/assets/43255108/9c38e04a-3437-4128-b631-d2b9e885ed26">
 
+## Part 3
+I gained hands-on experience with creating and deploying a basic java web server. It can handle HTTP get requests through the URL. I was also able to use the URL parameters as search queries and data to pass to the backend. Furthermore, I learned about SSH key authentication. By creating a pair of keys, putting one on my computer and the other on the remote computer, I was able to connect to the remote computer without inputting a password every time.
