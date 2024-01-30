@@ -12,7 +12,7 @@ Output:
 [user@sahara ~]$  
 ```
 
-Working Directory: /
+Working Directory: ~/
 <br />
 The directory is changed to the home directory when no argument is given. **Not an error.**
 
@@ -27,7 +27,7 @@ Output:
 [user@sahara ~/lecture1]$  
 ```
 
-Working Directory: /
+Working Directory: ~/
 <br />
 Since a directory "lecture1" was given as an argument, the command changes the working directory to the inputted argument. **Not an error.**
 
@@ -42,7 +42,7 @@ Output:
 bash: cd: Hello.java: Not a directory
 ```
 
-Working Directory: /lecture1
+Working Directory: ~/lecture1
 <br />
 It doesn't change directories because the argument given is a file. The argument only accepts directories. **Error.**
 
@@ -58,7 +58,7 @@ Output:
 lecture1
 ```
 
-Working Directory: /
+Working Directory: ~/
 <br />
 Since no argument is given, it automatically shows the files and directories in the "./" directory, or the working directory. **Not an error.**
 
@@ -73,7 +73,7 @@ Output:
 Hello.class  Hello.java  messages  README
 ```
 
-Working Directory: /
+Working Directory: ~/
 <br />
 It shows the files and directories in the "/lecture1" directory. **Not an error.**
 
@@ -88,7 +88,7 @@ Output:
 Hello.java
 ```
 
-Working Directory: /lecture1
+Working Directory: ~/lecture1
 <br />
 It shows the file given, which is "Hello.java". Instead of showing multiple files and directories, it only displays one file, because the argument given was a single file. **Not an error.**
 
@@ -104,7 +104,7 @@ Output:
 
 ```
 
-Working Directory: /
+Working Directory: ~/
 <br />
 Since no argument was given, the command prints nothing as a result. **Not an error.**
 
@@ -119,7 +119,7 @@ Output:
 cat: lecture1/: Is a directory
 ```
 
-Working Directory: /
+Working Directory: ~/
 <br />
 It doesn't show the file contents because the argument given was a directory, rather than a file. **Error.**
 
@@ -145,6 +145,6 @@ StandardCharsets.UTF_8);
   }
 ```
 
-Working Directory: /lecture1
+Working Directory: ~/lecture1
 <br />
 It prints the file contents because a file was given for the argument. **Not an error.**
