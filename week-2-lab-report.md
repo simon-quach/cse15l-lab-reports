@@ -88,19 +88,23 @@ This also calls the handleRequest method in my code. Since the path is `/add-mes
 
 The "s=" and "user=" are then removed and the two strings are concatenated to the results string that is later returned. Once the res string returns, it should have added an additional message.
 
+<br/>
 ## Part 2
 ### This is where my private SSH key is located.
 <img width="334" alt="image" src="https://github.com/simon-quach/cse15l-lab-reports/assets/43255108/607074a2-1aad-488c-aea6-10896c34e921">
 
 Path: `//Users/simonquach/.ssh/id_rsa.pub`
+<br/>
 
 ### This is where my public SSH key is located on ieng6's file system.
 <img width="579" alt="image" src="https://github.com/simon-quach/cse15l-lab-reports/assets/43255108/98d1c50f-4a51-4c17-a25d-afe662ab39b5">
 
 Path: `/home/linux/ieng6/oce/59/siquach/.ssh/authorized_keys`
+<br/>
 
 ### Here I logged into my ieng6 account without being asked for a password.
 <img width="588" alt="image" src="https://github.com/simon-quach/cse15l-lab-reports/assets/43255108/9c38e04a-3437-4128-b631-d2b9e885ed26">
 
+<br/>
 ## Part 3
 I gained hands-on experience with creating and deploying a basic java web server. It can handle HTTP get requests through the URL. I was also able to use the URL parameters as search queries and data to pass to the backend. Furthermore, I learned about SSH key authentication. By creating a pair of keys, putting one on my computer and the other on the remote computer, I was able to connect to the remote computer without inputting a password every time.
