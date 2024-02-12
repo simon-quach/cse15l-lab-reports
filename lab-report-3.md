@@ -166,4 +166,4 @@ $ find ./technical/ -type f -empty
 
 This command printed nothing because there were no empty files in `./technical`.
 
-Source: https://www.geeksforgeeks.org/find-command-in-linux-with-examples/
+Source for all commands and options: https://www.geeksforgeeks.org/find-command-in-linux-with-examples/
