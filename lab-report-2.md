@@ -94,7 +94,7 @@ The "s=" and "user=" are then removed and the two strings are concatenated to th
 ### This is where my private SSH key is located.
 <img width="334" alt="image" src="https://github.com/simon-quach/cse15l-lab-reports/assets/43255108/607074a2-1aad-488c-aea6-10896c34e921">
 
-Path: `//Users/simonquach/.ssh/id_rsa.pub`
+Path: `/Users/simonquach/.ssh/id_rsa`
 <br/>
 
 ### This is where my public SSH key is located on ieng6's file system.
