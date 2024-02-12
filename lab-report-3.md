@@ -70,6 +70,12 @@ find [path] [options] [expression]
 
 ### Options for using `find`
 
-#### 
+#### `-name`
+
+#### `-type`
+
+#### `-print`
+
+#### `-empty`
 
 Source: https://www.geeksforgeeks.org/find-command-in-linux-with-examples/
