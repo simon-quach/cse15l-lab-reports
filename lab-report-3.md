@@ -58,6 +58,18 @@ The original code replaces the left side of the array with the right side, but o
 
 ## Part 2
 
+Here I want to take a look at the `find` command.
 
+This command helps you find files and directories with a specific query.
 
-Source: https://www.digitalocean.com/community/tutorials/grep-command-in-linux-unix
+Here is the syntax for using `find`:
+
+```
+find [path] [options] [expression]
+```
+
+### Options for using `find`
+
+#### 
+
+Source: https://www.geeksforgeeks.org/find-command-in-linux-with-examples/
