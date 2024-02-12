@@ -72,7 +72,7 @@ This calls the handleRequest method in my code. Since the path is `/add-message`
 ```
 <br />
 
-The "s=" and "user=" are then removed and the two strings are concatenated to the results string that is later returned. Once the res string returns, it should have added an additional message.
+The "s=" and "user=" are then removed and the two strings are concatenated to the results string that is later returned. Once the res string returns, it should have added an additional message. When a request with the path `/add-message` is received, the parameters are parsed and used to create a new message entry, which is then added to the `mapping` array. Thus, with each request to add a message, the `mapping` field is updated to include the new message. When there is nothing in the message, a blank string will be added.
 
 After I used `/add-message?s=Hey%20there!&user=Simon2` and the page shows this:
 
@@ -86,7 +86,7 @@ This also calls the handleRequest method in my code. Since the path is `/add-mes
 { "s=Hey there!", "user=Simon2" }
 ```
 
-The "s=" and "user=" are then removed and the two strings are concatenated to the results string that is later returned. Once the res string returns, it should have added an additional message.
+The "s=" and "user=" are then removed and the two strings are concatenated to the results string that is later returned. Once the res string returns, it should have added an additional message. When a request with the path `/add-message` is received, the parameters are parsed and used to create a new message entry, which is then added to the `mapping` array. Thus, with each request to add a message, the `mapping` field is updated to include the new message. When there is nothing in the message, a blank string will be added.
 
 <br/>
 
