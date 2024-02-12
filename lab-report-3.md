@@ -1,8 +1,10 @@
 # Lab Report 3 - Bugs and Commands (Week 5)
 
+## Part 1
+
 In week 4's lab, there was a function called `reverseInPlace()` that was supposed to reverse an array in place.
 
-## A failure-inducing input for the buggy program
+### A failure-inducing input for the buggy program
 
 ```
 @Test
@@ -13,7 +15,7 @@ public void testReverseInPlace1() {
 }
 ```
 
-## An input that doesn't induce a failure, as a JUnit test and any associated code (write it as a code block in Markdown)
+### An input that doesn't induce a failure, as a JUnit test and any associated code (write it as a code block in Markdown)
 
 ```
 @Test
@@ -24,13 +26,13 @@ public void testReverseInPlace2() {
 }
 ```
 
-## The symptom, as the output of running the tests
+### The symptom, as the output of running the tests
 
 ![image](https://github.com/simon-quach/cse15l-lab-reports/assets/43255108/d85c0304-5021-48f5-b0db-0428383830ea)
 
-## The bug, as the before-and-after code change required to fix it
+### The bug, as the before-and-after code change required to fix it
 
-### Before
+#### Before
 
 ```
 static void reverseInPlace(int[] arr) {
@@ -40,7 +42,7 @@ static void reverseInPlace(int[] arr) {
 }
 ```
 
-### After
+#### After
 
 ```
 static void reverseInPlace(int[] arr) {
