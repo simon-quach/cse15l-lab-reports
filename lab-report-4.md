@@ -32,4 +32,9 @@ I ran the tests again using `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13
 
 <img width="752" alt="image" src="https://github.com/simon-quach/cse15l-lab-reports/assets/43255108/4af379eb-9a7c-42ba-bb06-888044c046a2">
 
+<br/>
+
+In order to commit and push the changes to my remote repository, I used `git add .` to add all of my changes in my current working directory to the staging area. This should add the file `ListExamples.java` to the staging area because it was the only file that was changed. Once this is done, I used `git commit -m "fix failed test case"` to commit the staged changes with the message "fixed failed test case". The `-m` option is what allows you to add a message to your git commit. Once that is done, I ran `git push`, which pushes my commit to the remote repository on Github.
+
+<img width="631" alt="image" src="https://github.com/simon-quach/cse15l-lab-reports/assets/43255108/b384c7e4-c1f4-420a-9086-93e9f7d88a3d">
 
