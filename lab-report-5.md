@@ -172,3 +172,7 @@ class ListExamples {
 
 }
 ```
+
+# Part 2 – Reflection
+
+During the second half of this quarter, I really enjoyed doing all of the in person labs because I am a firm believer that hands-on experience is the best way to learn new things, especially when it comes to programming. Something new that I learned was how to use bash to automate command line commands, and also how to use arguments with the command line. Using vim has also been really cool, because it's another way to edit documents and files when you only have the command line available. It makes you appreciate the many different tools that developers have made throughout the years to make the process of programming even easier.
