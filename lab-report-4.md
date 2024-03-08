@@ -12,13 +12,15 @@ Then I cloned my forked repository using the ssh url with this command: `git clo
 
 <br/>
 
-To demonstrate that the test cases fail, I ran the tests using `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests`. Once I ran that command, there were 2 tests that were run and 1 failure.
+Next, I ran `cd lab7` to set the new directory as my working directory. So now my working directory should be `/lab7`.
+
+To demonstrate that the test cases fail, I first have to compile the code using `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java`. I ran the tests using `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests`. Once I ran that command, there were 2 tests that were run and 1 failure.
 
 <img width="752" alt="image" src="https://github.com/simon-quach/cse15l-lab-reports/assets/43255108/c1a72bb6-6fd5-4860-b42d-4854b228015c">
 
 <br/>
 
-To start editing `ListExamples.java`, I ran the command `vim ListExamples.java` to start editing the file using `vim`. 
+To start editing `ListExamples.java`, I first have to compile the code using `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java`. I ran the command `vim ListExamples.java` to start editing the file using `vim`. 
 
 Keys pressed:`<down>*37 <right><right><right><right><right>, r2, :wq`.
 
