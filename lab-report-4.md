@@ -20,7 +20,7 @@ To demonstrate that the test cases fail, I first have to compile the code using 
 
 <br/>
 
-To start editing `ListExamples.java`, I first have to compile the code using `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java`. I ran the command `vim ListExamples.java` to start editing the file using `vim`. 
+To start editing `ListExamples.java`, I ran the command `vim ListExamples.java` to start editing the file using `vim`. 
 
 Keys pressed:`<down>*37 <right><right><right><right><right>, r2, :wq`.
 
@@ -30,7 +30,7 @@ I used `r` in vim in order to replace the character under the cursor, 1, with 2.
 
 <br/>
 
-I ran the tests again using `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests`. Once I ran that command, both tests were able to pass.
+I have to compile the code using `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java`. I ran the tests again using `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests`. Once I ran that command, both tests were able to pass.
 
 <img width="752" alt="image" src="https://github.com/simon-quach/cse15l-lab-reports/assets/43255108/4af379eb-9a7c-42ba-bb06-888044c046a2">
 
